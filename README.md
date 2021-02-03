@@ -1,5 +1,6 @@
 For Developers
 ============
+
 You can also see [Java](https://github.com/starlangsoftware/TurkishNamedEntityRecognition), [C++](https://github.com/starlangsoftware/TurkishNamedEntityRecognition-CPP), [Swift](https://github.com/starlangsoftware/TurkishNamedEntityRecognition-Swift), or [C#](https://github.com/starlangsoftware/TurkishNamedEntityRecognition-CS) repository.
 
 ## Requirements
@@ -38,3 +39,22 @@ Steps for opening the cloned project:
 * Select **File | Open** from main menu
 * Choose `TurkishNamedEntityRecognition-Py/` file
 * Select open as project option
+
+Detailed Description
+============
+
++ [Gazetteer](#gazetteer)
+
+## Gazetteer
+
+Bir Gazetter yüklemek için
+
+	Gazetteer(self, name: str, fileName: str)
+
+Hazır Gazetteerleri kullanmak için
+
+	AutoNER()
+
+Bir Gazetteer'de bir kelime var mı diye kontrol etmek için
+
+	contains(self, word: str) -> bool
