@@ -1,7 +1,7 @@
 For Developers
 ============
 
-You can also see [Java](https://github.com/starlangsoftware/TurkishNamedEntityRecognition), [C++](https://github.com/starlangsoftware/TurkishNamedEntityRecognition-CPP), [Swift](https://github.com/starlangsoftware/TurkishNamedEntityRecognition-Swift), or [C#](https://github.com/starlangsoftware/TurkishNamedEntityRecognition-CS) repository.
+You can also see [Cython](https://github.com/starlangsoftware/TurkishNamedEntityRecognition-Cy), [Java](https://github.com/starlangsoftware/TurkishNamedEntityRecognition), [C++](https://github.com/starlangsoftware/TurkishNamedEntityRecognition-CPP), [Swift](https://github.com/starlangsoftware/TurkishNamedEntityRecognition-Swift), or [C#](https://github.com/starlangsoftware/TurkishNamedEntityRecognition-CS) repository.
 
 ## Requirements
 
