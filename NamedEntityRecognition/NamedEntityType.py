@@ -30,7 +30,7 @@ class NamedEntityType(Enum):
             Entity type in NamedEntityType form
         """
         for _type in NamedEntityType:
-            if entityType == _type.name:
+            if entityType.upper() == _type.name:
                 return _type
         return NamedEntityType.NONE
 

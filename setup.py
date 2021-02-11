@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='NlpToolkit-NamedEntityRecognition',
-    version='1.0.5',
+    version='1.0.6',
     packages=['NamedEntityRecognition'],
     url='https://github.com/StarlangSoftware/TurkishNamedEntityRecognition-Py',
     license='',
