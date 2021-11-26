@@ -22,7 +22,7 @@ See the Table below for typical generic named entity types.
 For Developers
 ============
 
-You can also see [Cython](https://github.com/starlangsoftware/TurkishNamedEntityRecognition-Cy), [Java](https://github.com/starlangsoftware/TurkishNamedEntityRecognition), [C++](https://github.com/starlangsoftware/TurkishNamedEntityRecognition-CPP), [Swift](https://github.com/starlangsoftware/TurkishNamedEntityRecognition-Swift), or [C#](https://github.com/starlangsoftware/TurkishNamedEntityRecognition-CS) repository.
+You can also see [Cython](https://github.com/starlangsoftware/TurkishNamedEntityRecognition-Cy), [Java](https://github.com/starlangsoftware/TurkishNamedEntityRecognition), [C++](https://github.com/starlangsoftware/TurkishNamedEntityRecognition-CPP), [Swift](https://github.com/starlangsoftware/TurkishNamedEntityRecognition-Swift), [Js](https://github.com/starlangsoftware/TurkishNamedEntityRecognition-Js), or [C#](https://github.com/starlangsoftware/TurkishNamedEntityRecognition-CS) repository.
 
 ## Requirements
 
