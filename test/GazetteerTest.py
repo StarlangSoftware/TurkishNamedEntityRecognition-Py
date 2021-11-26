@@ -1,12 +1,12 @@
 import unittest
 
-from NamedEntityRecognition.Gazetteer import Gazetteer
+from NamedEntityRecognition.AutoNER import AutoNER
 
 
 class GazetteerTest(unittest.TestCase):
 
     def test_Contains(self):
-        gazetteer = Gazetteer("location", "../gazetteer-location.txt")
+        gazetteer = AutoNER().locationGazetteer
         self.assertTrue(gazetteer.contains("bağdat"))
         self.assertTrue(gazetteer.contains("BAĞDAT"))
         self.assertTrue(gazetteer.contains("belçika"))

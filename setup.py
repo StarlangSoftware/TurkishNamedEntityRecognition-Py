@@ -6,8 +6,9 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='NlpToolkit-NamedEntityRecognition',
-    version='1.0.8',
-    packages=['NamedEntityRecognition'],
+    version='1.0.9',
+    packages=['NamedEntityRecognition', 'NamedEntityRecognition.data'],
+    package_data={'NamedEntityRecognition.data': ['*.txt']},
     url='https://github.com/StarlangSoftware/TurkishNamedEntityRecognition-Py',
     license='',
     author='olcaytaner',
