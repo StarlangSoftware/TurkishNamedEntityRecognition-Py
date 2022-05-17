@@ -19,6 +19,7 @@ class Gazetteer:
         self.__data = set()
         inputFile = open(fileName, "r", encoding="utf8")
         lines = inputFile.readlines()
+        inputFile.close()
         for line in lines:
             self.__data.add(line.strip())
 

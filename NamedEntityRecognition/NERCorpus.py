@@ -19,6 +19,7 @@ class NERCorpus(Corpus):
         if fileName is not None:
             inputFile = open(fileName, "r", encoding="utf8")
             lines = inputFile.readlines()
+            inputFile.close()
             for line in lines:
                 self.addSentence(NamedEntitySentence(line))
 
