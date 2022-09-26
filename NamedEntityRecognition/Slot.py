@@ -6,7 +6,9 @@ class Slot:
     type: SlotType
     tag: str
 
-    def __init__(self, tag: str, type: SlotType = None):
+    def __init__(self,
+                 tag: str,
+                 type: SlotType = None):
         if type is not None:
             self.tag = tag
             self.type = type

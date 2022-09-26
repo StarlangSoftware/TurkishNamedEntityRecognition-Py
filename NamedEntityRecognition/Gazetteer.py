@@ -3,7 +3,9 @@ class Gazetteer:
     __data: set
     __name: str
 
-    def __init__(self, name: str, fileName: str):
+    def __init__(self,
+                 name: str,
+                 fileName: str):
         """
         A constructor for a specific gazetteer. The constructor takes name of the gazetteer and file name of the
         gazetteer as input, reads the gazetteer from the input file.

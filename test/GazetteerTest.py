@@ -6,7 +6,7 @@ from NamedEntityRecognition.AutoNER import AutoNER
 class GazetteerTest(unittest.TestCase):
 
     def test_Contains(self):
-        gazetteer = AutoNER().locationGazetteer
+        gazetteer = AutoNER().location_gazetteer
         self.assertTrue(gazetteer.contains("bağdat"))
         self.assertTrue(gazetteer.contains("BAĞDAT"))
         self.assertTrue(gazetteer.contains("belçika"))

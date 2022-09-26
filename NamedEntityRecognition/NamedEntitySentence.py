@@ -19,32 +19,32 @@ class NamedEntitySentence(Sentence):
         if sentence is None:
             super().__init__()
         else:
-            namedEntityType = NamedEntityType.NONE
+            named_entity_type = NamedEntityType.NONE
             self.words = []
-            wordArray = sentence.split()
-            for word in wordArray:
+            word_array = sentence.split()
+            for word in word_array:
                 if len(word) != 0:
                     if word != "<b_enamex":
                         if word.startswith("TYPE=\""):
-                            typeIndexEnd = word.index('\"', 6)
-                            if typeIndexEnd != -1:
-                                entityType = word[6: typeIndexEnd]
-                                namedEntityType = NamedEntityType.getNamedEntityType(entityType)
+                            type_index_end = word.index('\"', 6)
+                            if type_index_end != -1:
+                                entityType = word[6: type_index_end]
+                                named_entity_type = NamedEntityType.getNamedEntityType(entityType)
                             if word.endswith("e_enamex>"):
                                 candidate = word[word.index('>') + 1: word.index('<')]
                                 if len(candidate) != 0:
-                                    self.words.append(NamedEntityWord(candidate, namedEntityType))
-                                namedEntityType = NamedEntityType.NONE
+                                    self.words.append(NamedEntityWord(candidate, named_entity_type))
+                                named_entity_type = NamedEntityType.NONE
                             else:
                                 candidate = word[word.index('>') + 1:]
                                 if len(candidate) != 0:
-                                    self.words.append(NamedEntityWord(candidate, namedEntityType))
+                                    self.words.append(NamedEntityWord(candidate, named_entity_type))
                         else:
                             if word.endswith("e_enamex>"):
                                 candidate = word[0: word.index('<')]
                                 if len(candidate) != 0:
-                                    self.words.append(NamedEntityWord(candidate, namedEntityType))
-                                namedEntityType = NamedEntityType.NONE
+                                    self.words.append(NamedEntityWord(candidate, named_entity_type))
+                                named_entity_type = NamedEntityType.NONE
                             else:
                                 if len(word) != 0:
-                                    self.words.append(NamedEntityWord(word, namedEntityType))
+                                    self.words.append(NamedEntityWord(word, named_entity_type))

@@ -5,9 +5,11 @@ from NamedEntityRecognition.NamedEntityType import NamedEntityType
 
 class NamedEntityWord(Word):
 
-    __namedEntityType: NamedEntityType
+    __named_entity_type: NamedEntityType
 
-    def __init__(self, name: str, namedEntityType: NamedEntityType):
+    def __init__(self,
+                 name: str,
+                 namedEntityType: NamedEntityType):
         """
         A constructor of NamedEntityWord which takes name and nameEntityType as input and sets the corresponding
         attributes
@@ -20,7 +22,7 @@ class NamedEntityWord(Word):
             NamedEntityType of the word
         """
         super().__init__(name)
-        self.__namedEntityType = namedEntityType
+        self.__named_entity_type = namedEntityType
 
     def getNamedEntityType(self) -> NamedEntityType:
         """
@@ -31,4 +33,7 @@ class NamedEntityWord(Word):
         NamedEntityType
             namedEntityType of the word.
         """
-        return self.__namedEntityType
+        return self.__named_entity_type
+
+    def __repr__(self):
+        return f"{self.name} {self.__named_entity_type}"
